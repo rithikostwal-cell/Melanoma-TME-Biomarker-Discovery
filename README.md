@@ -9,7 +9,7 @@ This repository contains an integrated computational pipeline combining single-c
 1. **scRNA-seq Preprocessing & Clustering:** Utilized `Scanpy` (Python) to perform rigorous quality control, normalization, PCA, and Leiden clustering on ~10,000 cells, mapping the TME into 7 distinct cellular populations.
 2. **AI-Driven Feature Selection:** Developed an `XGBoost` classifier and a PyTorch-based Deep Autoencoder to prioritize genes differentiating immunosuppressive Myeloid cells from T-Cells.
 3. **Explainable AI (XAI):** Applied `SHAP` values to interpret model predictions and validate the biological directionality of the top features.
-4. **Clinical Validation:** Simulated TCGA-SKCM clinical cohorts using Kaplan-Meier survival analysis (`lifelines`) to confirm the prognostic value of the discovered signature.
+4. **Clinical Validation:** Clinical validation utilizing TCGA-SKCM (Skin Cutaneous Melanoma) cohort data using Kaplan-Meier survival analysis (`lifelines`) to confirm the prognostic value of the discovered signature.
 
 ## 🚀 Key Discoveries
 * **Prognostic Signature:** Identified a robust 3-gene signature (**TYROBP, CST3, TIGIT**) that strongly correlates with reduced 5-year survival probability (p < 0.0001).
